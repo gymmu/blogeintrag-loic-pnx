@@ -10,7 +10,13 @@ body {
   font-family: sans-serif;
 }
 
-.headrow {
+#menubar {
+  background-color: #367C2B;
+  padding: 15px;
+  border-bottom: 2px solid black;
+}
+
+.headline {
   background-color: rgb(75, 81, 81);
   color: white;
   text-align: center;
