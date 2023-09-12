@@ -13,12 +13,18 @@ body {
 #menubar {
   background-color: #367C2B;
   padding: 15px;
-  border-bottom: 2px solid black;
+  border-bottom: 3px solid black;
 }
 
 .headline {
-  background-color: rgb(75, 81, 81);
+  background-color: rgb(69, 72, 72);
   color: white;
   text-align: center;
   padding: 20px;
+}
+
+#einführung {
+  text-align: center;
+  font-size: 17px;
+  margin: 30px;
 }
