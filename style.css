@@ -6,6 +6,13 @@
 
 body {
   margin: 0;
-  background-color: lightgray;
+  background-color: white;
   font-family: sans-serif;
+}
+
+.headrow {
+  background-color: rgb(75, 81, 81);
+  color: white;
+  text-align: center;
+  padding: 100px;
 }
