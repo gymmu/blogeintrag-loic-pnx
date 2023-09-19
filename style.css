@@ -12,8 +12,16 @@ body {
 
 #menubar {
   background-color: #294A10;
-  padding: 20px;
+  padding: 10px;
   border-bottom: 3px solid black;
+  overflow: hidden;                   /* Code for fixed Bar from https://www.w3schools.com/howto/howto_css_fixed_menu.asp */
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+#logolink {
+  text-align: right;
+  margin-right: 2em;
 }
 
 .headline {
@@ -21,6 +29,7 @@ body {
   color: white;
   text-align: center;
   padding: 20px;
+  margin-top: 30px;
 }
 
 #einführung {
