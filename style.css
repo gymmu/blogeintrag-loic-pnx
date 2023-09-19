@@ -11,25 +11,40 @@ body {
 }
 
 #menubar {
-  background-color: #294A10;
-  padding: 10px;
+  background-color: #294a10f9;
+  padding: 0px;
   border-bottom: 3px solid black;
   overflow: hidden;                   /* Code for fixed Bar from https://www.w3schools.com/howto/howto_css_fixed_menu.asp */
   position: fixed;
   top: 0;
   width: 100%;
 }
+
+#menutext a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: larger;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+#menutext a:hover {
+  background: #1c340af9;
+}
+
 #logolink {
   text-align: right;
+  margin-top: 8px;
   margin-right: 2em;
 }
 
-.headline {
+#title {
   background-color: rgb(69, 72, 72);
   color: white;
   text-align: center;
-  padding: 20px;
-  margin-top: 30px;
+  padding: 50px;
 }
 
 #einführung {
