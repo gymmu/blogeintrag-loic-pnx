@@ -64,14 +64,15 @@ nav ul li ul li a{
 #logolink {
   text-align: right;
   margin-top: 13px;
-  margin-right: 2em;
+  margin-right: 1em;
 }
 
 #title {
   background-color: rgb(69, 72, 72);
   color: white;
   text-align: center;
-  padding: 50px;
+  padding-bottom: 50px;
+  padding-top: 80px;
 }
 
 #einführung {
