@@ -5,46 +5,75 @@
 }
 
 body {
-  margin: 0;
+  margin: 0px;
   background-color: white;
   font-family: sans-serif;
 }
 
-#menubar {
-  background-color: #294a10f9;
-  padding: 0px;
-  border-bottom: 3px solid black;
-  overflow: hidden;                   /* Code for fixed Bar from https://www.w3schools.com/howto/howto_css_fixed_menu.asp */
+nav{
+  width: 100%;
+  height: 59px;
+  background-color: #294a10;
+  box-shadow: 0px 1px 30px 2px black;
   position: fixed;
   top: 0;
-  width: 100%;
 }
 
-#menutext a {
+nav ul{
   float: left;
-  display: block;
-  color: #f2f2f2;
-  font-family: 'Times New Roman', Times, serif;
-  font-size: larger;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+  margin: 0px;
+  
 }
-#menutext a:hover {
-  background: #1c340af9;
+
+nav ul li{
+  float: left;
+  list-style: none;
+  position: relative;
+}
+
+nav ul li a{
+  font-family: 'Times New Roman', Times, serif;
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  text-decoration: none;
+  padding: 16px;
+  display: block;
+}
+
+nav ul li a:hover{
+  background-color: #1c340af9;
+}
+
+nav ul li ul{
+  display: none;
+  position: absolute;
+  background-color: #315913;
+  padding: 0px;
+  border-radius: 0px 0px 10px 10px;
+}
+
+nav ul li:hover ul{
+  display: block;
+}
+
+nav ul li ul li a{
+  color: rgb(255, 255, 255);
+  padding: 16px;
 }
 
 #logolink {
   text-align: right;
-  margin-top: 8px;
-  margin-right: 2em;
+  margin-top: 13px;
+  margin-right: 1em;
 }
 
 #title {
-  background-color: rgb(69, 72, 72);
+  background-color: rgb(55, 57, 57);
   color: white;
   text-align: center;
-  padding: 50px;
+  padding-bottom: 50px;
+  padding-top: 80px;
+  box-shadow: 0px 1px 10px 2px rgb(50, 50, 50);
 }
 
 #einführung {
