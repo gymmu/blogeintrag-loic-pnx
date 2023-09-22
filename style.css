@@ -193,7 +193,7 @@ nav ul li ul li a {
   object-fit: cover;
   user-select: none;
   margin-left: 14px;
-  width: calc(100% / 3);
+  width: calc(100% / 3) 0;
 }
 .carousel img:first-child {
   margin-left: 0px;
@@ -207,4 +207,11 @@ nav ul li ul li a {
   .carousel img {
     width: 100%;
   }
+}
+
+.endofpage {
+  content: "";
+  background-color: #11123f;
+  padding: 20px;
+  margin-top: 20px;
 }
