@@ -67,6 +67,10 @@ nav ul li ul li a {
   color: rgb(255, 255, 255);
   padding: 16px;
   font-size: 100%;
+  border-top-style: solid;
+  border-color: #294a10;
+  display: inline-flex;
+  width: 8.91em;
 }
 
 #logolink {
@@ -98,7 +102,7 @@ nav ul li ul li a {
 }
 
 .text-img > .text {
-  padding: 2rem 3rem;
+  padding: 1rem 3rem;
   font-size: 18px;
   line-height: 30px; 
 	text-align: center;
@@ -119,6 +123,10 @@ nav ul li ul li a {
 
 #erste-symbole {
   grid-template-columns: 20% auto;
+}
+
+#bildkarten {
+  grid-template-columns: 80% auto;
 }
 
 #bestellen {
@@ -212,8 +220,10 @@ nav ul li ul li a {
 
 
 .endofpage {
-  content: "";
   background-color: #11123f;
-  padding: 20px;
-  margin-top: 20px;
+  color: rgba(255, 255, 255, 0.315);
+  text-align: right;
+  font-size: 0.7em;
+  padding: 8px;
+  margin-top: 30px;
 }
