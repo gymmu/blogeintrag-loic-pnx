@@ -4,11 +4,10 @@
   box-sizing: content-box;
 }
 
-html{
+html {
   scroll-behavior: smooth;
   scroll-padding-top: 90px;
 }
-
 
 body {
   margin: 0px;
@@ -104,8 +103,8 @@ nav ul li ul li a {
 .text-img > .text {
   padding: 1rem 3rem;
   font-size: 18px;
-  line-height: 30px; 
-	text-align: center;
+  line-height: 30px;
+  text-align: center;
 }
 
 .text-img div a {
@@ -118,10 +117,10 @@ nav ul li ul li a {
 }
 
 #die-idee {
-  grid-template-columns: 80% auto; 
+  grid-template-columns: 80% auto;
 }
 
-#die-idee img{
+#die-idee img {
   border-radius: 20%;
 }
 
@@ -137,7 +136,7 @@ nav ul li ul li a {
   grid-template-columns: 18% auto;
 }
 
-#card-back img{
+#card-back img {
   border-radius: 8px;
 }
 
@@ -145,14 +144,14 @@ nav ul li ul li a {
   grid-template-columns: 35% auto;
 }
 
-#card-box img{
+#card-box img {
   border-radius: 15%;
 }
 
 #bestellen {
   grid-template-columns: 80% auto;
 }
-#bestellen img{
+#bestellen img {
   margin-top: 25%;
 }
 
@@ -242,8 +241,6 @@ nav ul li ul li a {
     width: 100%;
   }
 }
-
-
 
 .endofpage {
   background-color: #11123f;
