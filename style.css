@@ -3,6 +3,17 @@
 *::after {
   box-sizing: content-box;
 }
+html{
+  scroll-behavior: smooth;
+}
+
+:target::before {
+  content: "";
+  display: block;
+  height: 20px;
+  margin: -20px 0 0;
+}
+
 
 body {
   margin: 0px;
@@ -113,6 +124,10 @@ nav ul li ul li a {
 
 .text-img > img {
   width: 100%;
+}
+
+#die-idee {
+  grid-template-columns: 70% auto; 
 }
 
 #erste-symbole {
