@@ -121,6 +121,10 @@ nav ul li ul li a {
   grid-template-columns: 80% auto; 
 }
 
+#die-idee img{
+  border-radius: 20%;
+}
+
 #erste-symbole {
   grid-template-columns: 20% auto;
 }
@@ -129,8 +133,16 @@ nav ul li ul li a {
   grid-template-columns: 80% auto;
 }
 
+#card-back {
+  grid-template-columns: 18% auto;
+}
+
+#card-back img{
+  border-radius: 8px;
+}
+
 #bestellen {
-  grid-template-columns: 20% auto;
+  grid-template-columns: 80% auto;
 }
 #bestellen img{
   margin-top: 25%;
