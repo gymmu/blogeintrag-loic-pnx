@@ -163,7 +163,13 @@ nav ul li ul li a {
   padding: 0;
 }
 
-/* basic strucutre from */
+#Endprodukt {
+  text-align: center;
+  font-size: 150%;
+  margin-top: 7em;
+}
+
+/* basic strucutre from https://www.codingnepalweb.com/draggable-image-slider-html-css-javascript/ */
 
 .wrapper {
   display: flex;
