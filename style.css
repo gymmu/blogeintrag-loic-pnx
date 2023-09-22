@@ -151,14 +151,14 @@ nav ul li ul li a {
 .finalcards {
   display: flex;
   justify-content: space-around;
+  margin: 0;
+  padding: 0;
 }
 
 .wrapper {
   display: flex;
   max-width: 1000px;
   position: relative;
-  justify-content: center;
-  align-items: center;
   z-index: 0;
 }
 
