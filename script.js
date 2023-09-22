@@ -1,3 +1,6 @@
+/* JS Code from https://www.codingnepalweb.com/draggable-image-slider-html-css-javascript/ */
+
+
 const carousel = document.querySelector(".carousel"),
 firstImg = carousel.querySelectorAll("img")[0],
 arrowIcons = document.querySelectorAll(".wrapper i");
@@ -58,5 +61,3 @@ document.addEventListener("mousemove", dragging);
 carousel.addEventListener("touchmove", dragging);
 document.addEventListener("mouseup", dragStop);
 carousel.addEventListener("touchend", dragStop);
-
-/* https://www.codingnepalweb.com/draggable-image-slider-html-css-javascript/ */

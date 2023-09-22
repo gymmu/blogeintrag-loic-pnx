@@ -3,6 +3,7 @@
 *::after {
   box-sizing: content-box;
 }
+
 html{
   scroll-behavior: smooth;
   scroll-padding-top: 90px;
@@ -120,12 +121,21 @@ nav ul li ul li a {
   grid-template-columns: 20% auto;
 }
 
+#bestellen {
+  grid-template-columns: 20% auto;
+}
+#bestellen img{
+  margin-top: 25%;
+}
+
 .finalcards {
   display: flex;
   justify-content: space-around;
   margin: 0;
   padding: 0;
 }
+
+/* basic strucutre from */
 
 .wrapper {
   display: flex;
