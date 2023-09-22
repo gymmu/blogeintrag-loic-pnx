@@ -69,12 +69,26 @@ nav ul li:hover ul {
   animation: drop-anim 0.5s both ease-in-out;
 }
 
+nav ul li:not(:hover) ul {
+  display: none;
+  animation: fade-out 0.5s both ease-in-out;
+}
+
 @keyframes drop-anim{
   from {
     opacity: 0%;
   }
   to {
     opacity: 100%;
+  }
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 100%;
+  }
+  to {
+    opacity: 0%;
   }
 }
 
@@ -131,7 +145,12 @@ nav ul li ul li a {
 }
 
 #erste-symbole {
-  grid-template-columns: 30% auto;
+  grid-template-columns: 20% auto;
+}
+
+.finalcards {
+  display: flex;
+  justify-content: space-around;
 }
 
 .wrapper {
@@ -140,7 +159,6 @@ nav ul li ul li a {
   position: relative;
   justify-content: center;
   align-items: center;
-  margin-left: 100px;
   z-index: 0;
 }
 
@@ -208,6 +226,8 @@ nav ul li ul li a {
     width: 100%;
   }
 }
+
+
 
 .endofpage {
   content: "";
