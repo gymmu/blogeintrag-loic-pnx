@@ -4,8 +4,249 @@
   box-sizing: content-box;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
+
 body {
-  margin: 0;
-  background-color: lightgray;
+  margin: 0px;
+  background-color: rgb(227, 227, 227);
   font-family: sans-serif;
+}
+
+nav {
+  width: 100%;
+  height: 59px;
+  background-color: #294a10;
+  box-shadow: 0px 1px 30px 2px black;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+nav ul {
+  float: left;
+  margin: 0px;
+  padding: 0px;
+}
+
+nav ul li {
+  float: left;
+  list-style: none;
+  position: relative;
+}
+
+nav ul li a {
+  font-family: "Times New Roman", Times, serif;
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  text-decoration: none;
+  padding: 16px;
+  display: block;
+}
+
+nav ul li a:hover {
+  background-color: #1c340af9;
+}
+
+nav ul li ul {
+  opacity: 0;
+  transition: opacity 500ms;
+  position: absolute;
+  background-color: #315913;
+  padding: 0px;
+}
+
+nav ul li:hover ul {
+  opacity: 1;
+}
+
+nav ul li ul li a {
+  color: rgb(255, 255, 255);
+  padding: 16px;
+  font-size: 100%;
+  border-top-style: solid;
+  border-color: #294a10;
+  display: inline-flex;
+  width: 8.91em;
+}
+
+#logolink {
+  text-align: right;
+  margin-top: 13px;
+  margin-right: 1em;
+}
+
+#title {
+  background-color: rgb(55, 57, 57);
+  color: white;
+  text-align: center;
+  padding-bottom: 50px;
+  padding-top: 80px;
+  box-shadow: 0px 1px 10px 2px rgb(50, 50, 50);
+}
+
+#einführung {
+  text-align: center;
+  font-size: 20px;
+  margin: 30px;
+}
+
+.text-img {
+  display: grid;
+  grid-template-columns: 60% auto;
+  gap: 1rem;
+  margin: 100px;
+}
+
+.text-img > .text {
+  padding: 1rem 3rem;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.text-img div a {
+  text-decoration: none;
+}
+
+.text-img > img {
+  width: 100%;
+  max-height: 100%;
+}
+
+#die-idee {
+  grid-template-columns: 80% auto;
+}
+
+#die-idee img {
+  border-radius: 20%;
+}
+
+#erste-symbole {
+  grid-template-columns: 20% auto;
+}
+
+#bildkarten {
+  grid-template-columns: 80% auto;
+}
+
+#card-back {
+  grid-template-columns: 18% auto;
+}
+
+#card-back img {
+  border-radius: 8px;
+}
+
+#card-box {
+  grid-template-columns: 35% auto;
+}
+
+#card-box img {
+  border-radius: 15%;
+}
+
+#bestellen {
+  grid-template-columns: 80% auto;
+}
+#bestellen img {
+  margin-top: 25%;
+}
+
+.finalcards {
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+}
+
+#Endprodukt {
+  text-align: center;
+  font-size: 150%;
+  margin-top: 7em;
+}
+
+/* basic strucutre from https://www.codingnepalweb.com/draggable-image-slider-html-css-javascript/ */
+
+.wrapper {
+  display: flex;
+  max-width: 63em;
+  position: relative;
+  z-index: 0;
+}
+
+.wrapper i {
+  top: 50%;
+  height: 44px;
+  width: 44px;
+  color: #d6d6d6;
+  cursor: pointer;
+  font-size: 2rem;
+  font-weight: bold;
+  position: absolute;
+  text-align: center;
+  line-height: 44px;
+  background: #6e6e6e;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  transition: transform 0.1s linear;
+}
+.wrapper i:active {
+  transform: translateY(-50%) scale(0.9);
+}
+.wrapper i:hover {
+  background: #bdbdbd;
+  color: #3a3a3af9;
+}
+.wrapper i:first-child {
+  left: -22px;
+  display: none;
+}
+.wrapper i:last-child {
+  right: -22px;
+}
+.wrapper .carousel {
+  font-size: 0px;
+  cursor: pointer;
+  overflow: hidden;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+}
+.carousel.dragging {
+  cursor: grab;
+  scroll-behavior: auto;
+}
+.carousel.dragging img {
+  pointer-events: none;
+}
+.carousel img {
+  height: (100%);
+  object-fit: cover;
+  user-select: none;
+  margin-left: 14px;
+  width: calc(100% / 3) 0;
+}
+.carousel img:first-child {
+  margin-left: 0px;
+}
+@media screen and (max-width: 900px) {
+  .carousel img {
+    width: calc(100% / 2);
+  }
+}
+@media screen and (max-width: 550px) {
+  .carousel img {
+    width: 100%;
+  }
+}
+
+.endofpage {
+  background-color: #11123f;
+  color: rgba(255, 255, 255, 0.315);
+  text-align: right;
+  font-size: 0.7em;
+  padding: 8px;
+  margin-top: 40px;
 }
