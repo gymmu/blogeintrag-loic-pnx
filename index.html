@@ -1,112 +1,159 @@
 <!DOCTYPE html>
 <html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kartenspiel Fasnacht-Zunft Ryburg</title>
 
-<head>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
 
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kartenspiel Fasnacht-Zunft Ryburg</title>
-
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
-
-</head>
-
-<body>
-
-  <nav>
-    <ul>
-      <li><a href="#title">Home</a></li>
-      <li><a href="#">Arbeitsprozess</a>
-        <ul>
-          <li><a href="#">Die Idee</a></li>
-          <li><a href="#">Die ersten Symbole</a></li>
-          <li><a href="#">-----</a></li>
-          <li><a href="#">Layout der Karten erstellen</a></li>
-          <li><a href="#">Karten bestellen</a></li>
-        </ul>
-      </li>
-      <li><a href="#finalcards">Endprodukt</a></li>
-    </ul>
-    <div id="logolink">
-      <a href="https://www.fasnachtzunftryburg.ch"><img src="pics/zunftlogo.png" width="25px"></a>
-    </div> 
-  </nav>
-
-
-  <div id="title">
-    <p>
-      <img src="pics/cg-colors.png" width="350px"
-      />
-    </p>
-    <h1>Die Entstehung eines Kartenspiels<br>
-        für die Fasnachtzunft Ryburg</h1>
-  </div>
-  <main>
-    <h2 id="einführung">
-      In diesem Beitrag geht es um die Geschichte eines Kartenspiel.<br>
-      Dieses wurde, basierend auf Figuren der Fasnachtzunft Ryburg, von mir erstellt.
-    </h2>
-
-    <div class="wrapper" id="finalcards">
-      <i id="left" class="fa-solid fa-angle-left"><</i>
-      <div class="carousel">
-        <img src="pics/CARDS/PIK-ASS" alt="img" draggable="false" width="323px">
-        <img src="pics/CARDS/PIK-2.png" alt="img" draggable="false" width="323px">
-        <img src="pics/CARDS/PIK-3.png" alt="img" draggable="false" width="323px">
-        <img src="pics/CARDS/PIK-4.png" alt="img" draggable="false" width="323px">
-        <img src="pics/CARDS/PIK-5.png" alt="img" draggable="false" width="323px">
-        <img src="pics/CARDS/PIK-6.png" alt="img" draggable="false" width="323px">
-        <img src="pics/CARDS/PIK-7.png" alt="img" draggable="false" width="323px">
-        <img src="pics/CARDS/PIK-8.png" alt="img" draggable="false" width="323px">
-        <img src="pics/CARDS/PIK-9.png" alt="img" draggable="false" width="323px">
+  <body>
+    <nav>
+      <ul>
+        <li><a href="#title">Home</a></li>
+        <li>
+          <a href="#">Arbeitsprozess</a>
+          <ul>
+            <li><a href="#die-idee">Die Idee</a></li>
+            <li><a href="#erste-symbole">Die ersten Symbole</a></li>
+            <li><a href="#">-----</a></li>
+            <li><a href="#layout">Layout der Karten erstellen</a></li>
+            <li><a href="#">Karten bestellen</a></li>
+          </ul>
+        </li>
+        <li><a href="#finalcards">Endprodukt</a></li>
+      </ul>
+      <div id="logolink">
+        <a href="https://www.fasnachtzunftryburg.ch"
+          ><img src="pics/zunftlogo.png" width="25px"
+        /></a>
       </div>
-      <i id="right" class="fa-solid fa-angle-right">></i>
-    </div>
-    
-    <div>
-      Inhalt<br>
-      Inhalt<br>
-      Inhalt<br>
-      Inhalt<br>
-      Inhalt<br>
-      Inhalt<br>
-      Inhalt<br>
-      Inhalt<br>
-      Inhalt<br>
-      Inhalt<br>
-      Inhalt<br>
-      Inhalt<br>
-      Inhalt<br>
-      Inhalt<br>
-      Inhalt<br>
-      Inhalt<br>
-      Inhalt<br>
-      Inhalt<br>
-      Inhalt<br>
-      Inhalt<br>
-      Inhalt<br>
-      Inhalt<br>
-      Inhalt<br>
-      Inhalt<br>
-      Inhalt<br>
-      Inhalt<br>
-      Inhalt<br>
-      Inhalt<br>
-      Inhalt<br>
-      Inhalt<br>
-      Inhalt<br>
-      Inhalt<br>
-      Inhalt<br>
-      Inhalt<br>
-      Inhalt<br>
-      Inhalt<br>
-      Inhalt<br>
-      Inhalt<br>
-    </div>
-  </main>
-</body>
+    </nav>
 
+    <div id="title">
+      <p>
+        <img src="pics/cg-colors.png" width="350px" />
+      </p>
+      <h1>
+        Die Entstehung eines Kartenspiels<br />
+        für die Fasnachtzunft Ryburg
+      </h1>
+    </div>
+    <main>
+      <h2 id="einführung">
+        In diesem Beitrag geht es um die Geschichte eines Kartenspiel.<br />
+        Dieses wurde, basierend auf Figuren der Fasnachtzunft Ryburg, von mir
+        erstellt.
+      </h2>
 
+      <div class="text-img" id="die-idee">
+        <div class="text">
+          <h3>Die Idee</h3>
+          Die Grundsätzliche Idee ein eigenes Kartenspiel zu erstellen kam mir
+          schon vor vielen Monaten. Damals war ein Gedanke, dass sich das Logo
+          der Fasnachtzunft Ryburg, beziehungsweise der darauf abgebildete
+          <a
+            href="https://www.ateliercharivari.com/ueli#:~:text=Mit%20Ueli%2C%20wurden%20schon,Narren%20mit%20Uly%20Von%20Stauffen.&text=Weiteres%3A,als%20Symbol%20für%20Dummheit%20genutzt."
+          >
+            "Ueli"</a
+          >
+          sich gut für die Joker-Karte in einem Kartenset eignen würden.
+        </div>
+        <img
+          src="https://images.unsplash.com/photo-1434394354979-a235cd36269d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fG1vdW50YWluc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
+          alt=""
+        />
+      </div>
+
+      <div class="text-img" id="erste-symbole">
+        <img
+          src="pics/cg-colors.png" 
+          alt="erste Symbole"
+        />
+        <div class="text">
+          <h3>Die ersten Symbole</h3>
+          Die ersten Symbole, sprich die 4 Farben "Schufle, Härz, Chrütz und Egge", entstanden im Matheunterricht in der 9. Klasse. Mit ihnen war die Monate alte Idee des Kartenspiels schnell wieder präsent.<br>
+          Durch diese Symbole sollte sich dann auch der Stil der weiteren Symbole ergeben; etwas eckiges mit geometrischen Figuren. 
+        </div>
+      </div>
+
+      <div class="text-img" id="layout">
+        <div class="text">
+          <h3>Das Layout erstellen</h3>
+            Das Layout, also die finale Anordnung der Karten, habe ich mit Adobe Indesign erstellt.<br>
+            Durch Hilflinien lassen sich die gleichen Postitionen für Gleiches auf jede Karte übertragen.
+        </div>
+        <img
+          src="pics/ss-ind.png"
+          alt=""
+        />
+      </div>
+
+      <div class="wrapper" id="finalcards">
+        <i id="left" class="fa-solid fa-angle-left"><</i>
+        <div class="carousel">
+          <img
+            src="pics/CARDS/PIK-ASS"
+            alt="img"
+            draggable="false"
+            width="323px"
+          />
+          <img
+            src="pics/CARDS/PIK-2.png"
+            alt="img"
+            draggable="false"
+            width="323px"
+          />
+          <img
+            src="pics/CARDS/PIK-3.png"
+            alt="img"
+            draggable="false"
+            width="323px"
+          />
+          <img
+            src="pics/CARDS/PIK-4.png"
+            alt="img"
+            draggable="false"
+            width="323px"
+          />
+          <img
+            src="pics/CARDS/PIK-5.png"
+            alt="img"
+            draggable="false"
+            width="323px"
+          />
+          <img
+            src="pics/CARDS/PIK-6.png"
+            alt="img"
+            draggable="false"
+            width="323px"
+          />
+          <img
+            src="pics/CARDS/PIK-7.png"
+            alt="img"
+            draggable="false"
+            width="323px"
+          />
+          <img
+            src="pics/CARDS/PIK-8.png"
+            alt="img"
+            draggable="false"
+            width="323px"
+          />
+          <img
+            src="pics/CARDS/PIK-9.png"
+            alt="img"
+            draggable="false"
+            width="323px"
+          />
+        </div>
+        <i id="right" class="fa-solid fa-angle-right">></i>
+      </div>
+
+ 
+    </main>
+  </body>
 </html>
