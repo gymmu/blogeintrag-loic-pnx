@@ -5,13 +5,7 @@
 }
 html{
   scroll-behavior: smooth;
-}
-
-:target::before {
-  content: "";
-  display: block;
-  height: 20px;
-  margin: -20px 0 0;
+  scroll-padding-top: 90px;
 }
 
 
@@ -57,44 +51,21 @@ nav ul li a:hover {
 }
 
 nav ul li ul {
-  display: none;
+  opacity: 0;
+  transition: opacity 500ms;
   position: absolute;
   background-color: #315913;
   padding: 0px;
-  border-radius: 0px 0px 10px 10px;
 }
 
 nav ul li:hover ul {
-  display: block;
-  animation: drop-anim 0.5s both ease-in-out;
-}
-
-nav ul li:not(:hover) ul {
-  display: none;
-  animation: fade-out 0.5s both ease-in-out;
-}
-
-@keyframes drop-anim{
-  from {
-    opacity: 0%;
-  }
-  to {
-    opacity: 100%;
-  }
-}
-
-@keyframes fade-out {
-  from {
-    opacity: 100%;
-  }
-  to {
-    opacity: 0%;
-  }
+  opacity: 1;
 }
 
 nav ul li ul li a {
   color: rgb(255, 255, 255);
   padding: 16px;
+  font-size: 100%;
 }
 
 #logolink {
@@ -138,10 +109,11 @@ nav ul li ul li a {
 
 .text-img > img {
   width: 100%;
+  max-height: 100%;
 }
 
 #die-idee {
-  grid-template-columns: 70% auto; 
+  grid-template-columns: 80% auto; 
 }
 
 #erste-symbole {
@@ -157,7 +129,7 @@ nav ul li ul li a {
 
 .wrapper {
   display: flex;
-  max-width: 1000px;
+  max-width: 63em;
   position: relative;
   z-index: 0;
 }
