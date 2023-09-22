@@ -141,6 +141,14 @@ nav ul li ul li a {
   border-radius: 8px;
 }
 
+#card-box {
+  grid-template-columns: 35% auto;
+}
+
+#card-box img{
+  border-radius: 15%;
+}
+
 #bestellen {
   grid-template-columns: 80% auto;
 }
